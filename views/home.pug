@@ -1,0 +1,50 @@
+extends base.pug
+block style 
+        style
+           include ../static/style.css
+           
+block scripts
+    script(src='../static/index.js')
+
+block content 
+    
+    section#introSection 
+      div Welcome to Ranchi's Dance Academy
+      div.small Eat Dance Sleep Repeat 
+    section#missionSection 
+      h2 Our Mission
+      div.card 
+          h3 Feel the Dance
+          div.card-box
+            div.card-img 
+              img(src="../static/3.png", alt="")
+            div.card-content
+              p this is the best dance academy of the universe.  
+      div.card 
+          h3 Crazy for Dance
+          div.card-box
+            div.card-img 
+              img(src="../static/2.png", alt="")
+            div.card-content
+              p this is the best dance academy of the universe. 
+      div.card 
+          h3 Expert Teachers
+          div.card-box
+            div.card-img 
+              img(src="../static/1.png", alt="")
+            div.card-content
+              p this is the best dance academy of the universe. 
+    section#sponsorSection 
+      h2 Our Sponsors  
+      div#sponsers
+         div.spimage
+           img(src="../static/logo1.png", alt="")
+      
+         
+           img(src="../static/logo2.png", alt="")
+      
+         
+           img(src="../static/logo3.png", alt="")
+      
+         
+           img(src="../static/logo4.png", alt="")

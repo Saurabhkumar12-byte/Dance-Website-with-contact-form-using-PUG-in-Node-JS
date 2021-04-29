@@ -1,0 +1,24 @@
+//- base.pug
+doctype html
+html
+  head
+    title Ranchi Dance Academy
+    block style 
+        style
+           include ../static/style.css
+    block scripts
+      script(src='../static/index.js')
+  body
+    nav#navbar
+      ul 
+        div#logo
+          img(src="../static/logo.png", alt="")
+          | RDA
+        li #[a(href="/") Home ]
+        li #[a(href="/") About ]
+        li #[a(href="/") Services ]
+        li #[a(href="/") Class info]
+        li #[a(href="/") Contant us ]
+    block content
+    footer#footer 
+      | Copyright © 2021 | All rights reserved 
